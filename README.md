@@ -7,4 +7,4 @@
 
 ## MAPPING
 
-![./keymap-drawer/eyelash_sofle.svg]
+![[./keymap-drawer/eyelash_sofle.svg]]
