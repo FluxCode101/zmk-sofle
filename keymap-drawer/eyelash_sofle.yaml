@@ -152,7 +152,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - '&RA(U)'
+  - AltGr+U
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+O
   - {t: '$$mdi:transfer$$', type: trans}
