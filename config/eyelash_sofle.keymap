@@ -54,6 +54,7 @@
     &unicode {
         input-method = "wincompose";
     };
+
     / {
         unicode {
             u_ae = <0x00E4>;  // ä
