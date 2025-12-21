@@ -38,6 +38,31 @@
     };
 
     behaviors {
+        ue: unicode_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp F &kp C &kp ENTER>;
+        };
+        oe: unicode_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp F &kp 6 &kp ENTER>;
+        };
+        ae: unicode_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp E &kp 4 &kp ENTER>;
+        };
+        ss: unicode_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp D &kp F &kp ENTER>;
+        };
+        eur: unicode_eur {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N2 &kp N0 &kp A &kp C &kp ENTER>;
+        };
     };
 
     combos {
@@ -49,17 +74,6 @@
         };
     };
 
-    /* UNICODE MACROS */
-    unicode {
-        u_ae = <0x00E4>;  // ä
-        u_oe = <0x00F6>;  // ö
-        u_ue = <0x00FC>;  // ü
-        u_ss = <0x00DF>;  // ß
-        u_AE = <0x00C4>;  // Ä
-        u_OE = <0x00D6>;  // Ö
-        u_UE = <0x00DC>;  // Ü
-        u_eur = <0x20AC>; // €
-    };
 
 
 
@@ -95,8 +109,8 @@
         layer_2 {
             bindings = <
 &trans     &trans        &trans          &trans         &trans        &trans          &mmv MOVE_UP     &kp PG_UP    &kp INS       &kp HOME    &kp END         &trans       &trans
-&trans     &trans        &trans          &unicode u_eur &trans        &trans          &mmv MOVE_DOWN   &kp PG_DN    &unicode u_ue &trans      &unicode u_oe   &trans       &trans
-&trans     &unicode u_ae &unicode u_ss   &trans         &trans        &trans          &mmv MOVE_LEFT   &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &trans       &trans
+&trans     &trans        &trans          &eur           &trans        &trans          &mmv MOVE_DOWN   &kp PG_DN    &ue           &trans      &oe             &trans       &trans
+&trans     &ae           &ss             &trans         &trans        &trans          &mmv MOVE_LEFT   &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &trans       &trans
 &trans     &trans        &trans          &trans         &trans        &trans          &mmv MOVE_RIGHT  &trans       &trans        &trans      &trans          &trans       &trans
 &trans     &trans        &trans          &trans         &mo 3         &trans          &mkp LCLK        &trans       &trans        &trans      &trans          &trans
             >;
