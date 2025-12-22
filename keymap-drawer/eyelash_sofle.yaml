@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: AltGr+', s: AltGr+"}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -79,7 +79,7 @@ layers:
   - F9
   - F10
   - F12
-  - {t: '`', s: '~'}
+  - {t: AltGr+`, s: AltGr+~}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -92,7 +92,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+`, s: Sft+~}
+  - {t: AltGr+Sft+`, s: AltGr+Sft+~}
   - {t: Sft+1, s: Sft+!}
   - {t: Sft+2, s: Sft+@}
   - {t: Sft+3, s: Sft+#}
@@ -147,19 +147,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&eur'
+  - '&RA(N5)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - '&ue'
+  - '&RA(Y)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&oe'
+  - '&RA(P)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ae'
-  - '&ss'
+  - '&RA(Q)'
+  - '&RA(S)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
