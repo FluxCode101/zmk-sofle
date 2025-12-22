@@ -147,19 +147,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&RA(N5)'
+  - {t: AltGr+5, s: AltGr+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - '&RA(Y)'
+  - AltGr+Y
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&RA(P)'
+  - AltGr+P
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&RA(Q)'
-  - '&RA(S)'
+  - AltGr+Q
+  - AltGr+S
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
