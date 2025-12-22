@@ -99,7 +99,7 @@ layers:
   - {t: Sft+4, s: Sft+$}
   - {t: Sft+5, s: Sft+%}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: Sft+6, s: Sft+^}
+  - {t: AltGr+Sft+6, s: AltGr+Sft+^}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
