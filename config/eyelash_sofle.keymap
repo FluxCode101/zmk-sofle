@@ -49,7 +49,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-/* Offizellen Keymap-Codes: https://zmk.dev/docs/keymaps/list-of-keycodes */
+/* Offiziellen Keymap-Codes: https://zmk.dev/docs/keymaps/list-of-keycodes */
         layer0 {
             bindings = <
 &kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8        &kp N9           &kp N0      &kp DELETE
@@ -65,11 +65,11 @@
 
         layer_1 {
             bindings = <
-&kp F11           &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12 
-&kp GRAVE         &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_DOWN   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &trans
-&kp LS(GRAVE)     &kp LS(N1)       &kp LS(N2)      &kp LS(N3)       &kp LS(N4)       &kp LS(N5)         &mmv MOVE_LEFT   &kp LS(N6)       &kp LS(N7)       &kp LS(N8)  &kp LS(N9) &kp LS(N0)        &kp LS(BSLH)
-&trans            &trans           &kp LS(MINUS)   &kp LS(EQUAL)    &kp LS(LBKT)     &kp LS(RBKT)       &mmv MOVE_RIGHT  &kp LBKT         &kp RBKT         &kp MINUS   &kp EQUAL  &kp BSLH          &trans
-&kp C_MUTE        &trans           &trans          &trans           &trans           &trans             &trans           &trans           &mo 3            &trans      &trans     &trans
+&kp F11           &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans        &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12 
+&kp GRAVE         &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &trans        &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &trans
+&kp LS(GRAVE)     &kp LS(N1)       &kp LS(N2)      &kp LS(N3)       &kp LS(N4)       &kp LS(N5)         &trans        &kp LS(N6)       &kp LS(N7)       &kp LS(N8)  &kp LS(N9) &kp LS(N0)        &kp LS(BSLH)
+&trans            &trans           &kp LS(MINUS)   &kp LS(EQUAL)    &kp LS(LBKT)     &kp LS(RBKT)       &trans        &kp LBKT         &kp RBKT         &kp MINUS   &kp EQUAL  &kp BSLH          &trans
+&kp C_MUTE        &trans           &trans          &trans           &trans           &trans             &trans        &trans           &mo 3            &trans      &trans     &trans
             >;
 
             display-name = "layer1";
@@ -78,11 +78,11 @@
 
         layer_2 {
             bindings = <
-&trans     &trans        &trans          &trans         &trans        &trans          &mmv MOVE_UP     &kp PG_UP    &kp INS       &kp HOME    &kp END         &trans       &trans
-&trans     &trans        &trans          &kp RA(E)      &trans        &trans          &mmv MOVE_DOWN   &kp PG_DN    &kp RA(U)     &trans      &kp RA(O)       &trans       &trans
-&trans     &kp RA(A)     &kp RA(S)       &trans         &trans        &trans          &mmv MOVE_LEFT   &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &trans       &trans
-&trans     &trans        &trans          &trans         &trans        &trans          &mmv MOVE_RIGHT  &trans       &trans        &trans      &trans          &trans       &trans
-&trans     &trans        &trans          &trans         &mo 3         &trans          &mkp LCLK        &trans       &trans        &trans      &trans          &trans
+&trans     &trans        &trans          &trans         &trans        &trans          &trans            &trans        &kp INS       &kp HOME    &kp END         &trans       &trans
+&trans     &trans        &trans          &kp RA(E)      &trans        &trans          &trans            &kp PG_UP     &kp RA(U)     &trans      &kp RA(O)       &trans       &trans
+&trans     &kp RA(A)     &kp RA(S)       &trans         &trans        &trans          &trans            &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT       &trans       &trans
+&trans     &trans        &trans          &trans         &trans        &trans          &trans            &kp PG_DN     &trans        &trans      &trans          &trans       &trans
+&trans     &trans        &trans          &trans         &mo 3         &trans          &trans            &trans        &trans        &trans      &trans          &trans
             >;
 
             display-name = "layer2";
@@ -91,11 +91,10 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans          &trans          &trans        &trans           &trans  &trans
-&rgb_ug RGB_TOG &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans           &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans        &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans          &kp LG(N1)    &kp LG(N2)    &kp LG(N3)    &kp LG(N4)    &kp LG(N5)    &trans  &kp LG(N6)      &kp LG(N7)      &kp LG(N8)    &kp LG(N9)       &kp LG(N0)  &trans
-&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans           &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans          &trans          &trans        &trans            &trans      &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans            &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans            &trans      &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans            &trans      &trans        &trans        &trans        &trans  &trans          &trans          &trans        &trans           &trans
             >;
 
             display-name = "layer3";
