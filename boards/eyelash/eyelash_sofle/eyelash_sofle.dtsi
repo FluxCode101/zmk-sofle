@@ -7,6 +7,7 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
+#include <zephyr/dt-bindings/regulator/nrf5x.h>
 #include <dt-bindings/led/led.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
@@ -86,6 +87,16 @@
             pwms = <&pwm0 0 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
         };
     };
+};
+
+/* Run both regulator stages in DCDC mode (replaces the former
+ * CONFIG_BOARD_ENABLE_DCDC / _HV Kconfig options removed in Zephyr 4.x). */
+&reg0 {
+    status = "okay";
+};
+
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
 };
 
 &adc {
