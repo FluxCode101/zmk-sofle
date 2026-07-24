@@ -3,4 +3,9 @@ zmk/
 modules/
 tools/
 .west/
+/eyelash_sofle/
+zephyr/*
+!zephyr/module.yml
 refactoring.txt
+
+

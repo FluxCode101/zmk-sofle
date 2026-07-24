@@ -1,8 +1,11 @@
 identifier: eyelash_sofle
 name: Eyelash Sofle
+vendor: eyelashperipherals
 url: https://github.com/a741725193/zmk-sofle
 type: mcu
 arch: arm
+qualifiers:
+  - zmk
 toolchain:
   - zephyr
   - gnuarmemb
