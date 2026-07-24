@@ -1,3 +1,11 @@
+# AI Session & Artifacts
+.gemini/
+*.artifact
+*.bak
+*.tmp
+scratch/
+
+# Build & West
 build/
 zmk/
 modules/
@@ -7,5 +15,3 @@ tools/
 zephyr/*
 !zephyr/module.yml
 refactoring.txt
-
-
