@@ -1,11 +1,11 @@
 # Sofle
 
+Kombiniert US Layout mit deutschen Umlauten auf dem Sofle Split Keyboard
+
 ## UPDATE
 
-- Jetzt Crosscompatibel mit Windows 11 & Linux
-- Ausgelegt an US-International Layout
-- Layer 3 durch Druck von Layer 1 & 2 Taste gleichzeitig hinzugefügt
-- Die Umlaute werden über die Super 3 Taste (ALTGR oder rechte ALT Taste) -> üäöüß€
+- Kompatible Keycodes Windows 11, Linux und MacOS
+- Die Umlaute werden über die Super 3 Taste ausgelößt (ALTGR oder rechte ALT Taste) -> üäöüß€
 
 ## MAPPING
 
